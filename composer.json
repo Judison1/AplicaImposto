@@ -1,0 +1,21 @@
+{
+    "name": "judis/produtos",
+    "description": "Calcular o imposto de produtos",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Judison Godinho de Sousa",
+            "email": "judison@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {"php": ">=7.1"},
+    "autoload": {
+        "psr-4": {
+            "Produto\\": "src/produto/",
+            "Imposto\\": "src/imposto/",
+            "Orcamento\\": "src/orcamento/"
+        }
+    }
+}
