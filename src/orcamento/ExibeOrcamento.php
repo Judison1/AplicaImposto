@@ -21,7 +21,8 @@ class ExibeOrcamento
                 .'item = ' . $produto->getItem() . '<br>'
                 .'valor = ' . $produto->getValor() . '<br>'
                 .'quantidade = '. $produto->getQuantidade() . '<br>'
-                .'taxa = ' . $produto->getTaxa() . '<hr>';
+                .'taxa por unidade = ' . $produto->getTaxa() . '<br>'
+                .'total + imposto = ' . $produto->valorTotal() . '<hr>';
         }
     }
 }

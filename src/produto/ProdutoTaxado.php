@@ -29,4 +29,9 @@ class ProdutoTaxado extends Produto
         return $this->taxa;
     }
 
+    public function valorTotal(): float
+    {
+        return ($this->getValor() + $this->taxa) * $this->getQuantidade();
+    }
+
 }

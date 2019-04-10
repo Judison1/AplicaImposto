@@ -22,7 +22,7 @@ use Produto\Produto;
 			return $indice;
 		}
 		public function encontrarProduto($indice){
-			return $this->produto[$indice];
+			return $this->produtos[$indice];
 		}
 		public function getProdutos() {
 			return $this->produtos;
